@@ -104,7 +104,7 @@ public class ImpressGirl
 				byte[] bytes = s.getBytes();
 				for (byte b : bytes) {
 					 int code = b;
-					 // keycode only handles [A-Z] (which is ASCII decimal [65-90])
+					 // key-code only handles [A-Z] (which is ASCII decimal [65-90])
 					 if (code > 96 && code < 123) code = code - 32;
 					 robot.delay(40);
 					 robot.keyPress(code);
