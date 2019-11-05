@@ -1,4 +1,4 @@
-name: "Set Issue Label"
+name: Issue Labeler
 on:
   issues:
     types: [opened]
@@ -7,7 +7,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: pratikbutani/Java-Roboto-Class-Examples@v1.0.0
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["help", "wanted"]'
           labels: '["help wanted"]'
