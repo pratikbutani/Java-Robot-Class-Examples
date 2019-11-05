@@ -1,0 +1,14 @@
+name: "Set Issue Label"
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pratikbutani/Java-Roboto-Class-Examples@v1.0.0
+        with:
+          keywords: '["help", "wanted"]'
+          labels: '["help wanted"]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
